@@ -1,0 +1,120 @@
+<!--
+HTML tables are used to display data in a tabular format. They are made up of rows and columns, and each cell in the table can contain text,
+images, or other elements. HTML tables are defined with the <table> tag. The <table> tag is placed in the <body> section of the HTML document. 
+The <table> tag has a number of attributes that can be used to control the appearance of the table, such as the width, height, and border.
+The <table> tag can contain a number of other tags, including the <tr> tag, the <th> tag and the <td> tag. 
+The <tr> tag defines a row in the table. The <th> tag defines a header cell in the table. The <td> tag defines a data cell in the table.
+
+
+<table>: This is the container element for the entire table.
+<tr>: This represents a table row, which contains table cells either header cells or data cells. Each row of the table starts with this element.
+<th>: This is used to create header cells. It provides bold and centered text by default.
+td>: This represents data cells. It contains the actual data to be displayed in the table.
+
+Tables can have multiple rows (<tr>) and columns (<th> and <td>). 
+You can create complex tables by merging cells, adding headers, and applying different styling through CSS.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tables</title>
+    <style>
+        table, tr, td, th{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>html tables</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Employee Id</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+            <td>Augustus</td>
+            <td>556</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>Charlie</td>
+            <td>542</td>
+            <td>Male</td>
+        </tr>        <tr>
+            <td>Violet</td>
+            <td>523</td>
+            <td>Female</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+<!--
+This HTML file creates a simple table to display employee information, including columns for Name, Employee Id, and Gender. 
+The table is styled with a black border around each cell, giving it a clear structure. 
+The table contains three rows of data for three employees: Augustus, Charlie, and Violet.
+
+
+Here’s a breakdown of the HTML file that creates a table to display employee information:
+
+<!DOCTYPE html>: Declares that the document is using HTML5.
+
+<html lang="en">: Defines the root of the HTML document, with lang="en" indicating that the language is English.
+
+<head>: Contains meta-information about the document.
+
+<meta charset="UTF-8">: Specifies the character encoding as UTF-8 to support a wide range of characters.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: 
+Ensures the page is responsive by setting the viewport properties to match the device's width.
+
+<title>HTML tables</title>: Sets the title of the webpage to "HTML tables," which appears in the browser tab.
+
+<style>: Contains CSS styles for the table.
+
+table, tr, td, th { border: 1px solid black; }:
+This CSS rule applies a 1-pixel solid black border to the table itself, table rows (<tr>), table data cells (<td>), and table headers (<th>).
+
+</head>: Ends the head section.
+
+<body>: Begins the body section where visible content is placed.
+
+<h1>html tables</h1>: This <h1> tag creates a main heading with the text "html tables."
+
+<table>: Begins the table element.
+
+<tr>: Starts a new table row.
+<th>Name</th>: Defines a table header cell for the column "Name."
+<th>Employee Id</th>: Defines a header cell for the column "Employee Id."
+<th>Gender</th>: Defines a header cell for the column "Gender."
+</tr>: Closes the first row of the table.
+
+<tr>: Starts a new table row for the first employee's data.
+<td>Augustus</td>: Defines a table data cell containing the name "Augustus."
+<td>556</td>: Defines a data cell containing the employee ID "556."
+<td>Male</td>: Defines a data cell containing the gender "Male."
+</tr>: Closes the row for Augustus.
+
+<tr>: Starts a new table row for the second employee.
+<td>Charlie</td>: Defines a data cell containing the name "Charlie."
+<td>542</td>: Defines a data cell containing the employee ID "542."
+<td>Male</td>: Defines a data cell containing the gender "Male."
+</tr>: Closes the row for Charlie.
+
+<tr>: Starts a new table row for the third employee.
+<td>Violet</td>: Defines a data cell containing the name "Violet."
+<td>523</td>: Defines a data cell containing the employee ID "523."
+<td>Female</td>: Defines a data cell containing the gender "Female."
+</tr>: Closes the row for Violet.
+
+</table>: Closes the table element.
+
+</body>: Ends the body section.
+
+</html>: Closes the HTML document.
+-->

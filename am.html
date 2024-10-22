@@ -1,0 +1,96 @@
+<!--
+In HTML, colors can be represented using various formats. The most common ways to specify colors are using named colors, 
+hexadecimal values, RGB (Red, Green, Blue) values, and HSL (Hue, Saturation, Lighness) values.
+Here's an overview of each method:
+
+Named colors: The HTML provides a set of predefined color names that you can use directly.
+
+Hexadecimal colors: Hexadecimal values represent colors using a combination of 6 characters, where each pair of characters represents the
+intensity of red, green and blue components. The format is #RRGGBB, where RR is red component, GG is green component, and BB is blue component. 
+Each component can have values from 00 to FF (in hexadecimal), where 00 is the lowest intensity(0) and FF is the highest intensity(255)
+
+RGB Colors: RGB values represent colors using 3 integers, each representing the intensity of red, green and blue components.
+THe format is rgb (red, green, blue), where, red, green and blue are integers in the range of 0 to 255.
+
+HSL colors: HSL values represent colors using 3 components: Hue (the type of color), Saturation (the vividness of the color),
+and lightness (the brightness of color). The format is hsl (hue, saaturation, lightness).
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML colors</title>
+</head>
+<body>
+    <p style="color: red;">This text is red using normal color.</p>
+    <p style="color: #00FF00;">This text is green using hexadecimal color.</p>
+    <p style="color: rgb(0, 0, 255);">This text is blue using RGB color.</p>
+    <p style="color: hsl(60, 100%, 50%);"> This text is yellow using HSL color.</p>  
+</body>
+</html>
+
+<!--
+This HTML file demonstrates different ways to define text colors using inline CSS within paragraphs. It showcases:
+Standard color names (red), Hexadecimal color codes (#00FF00 for green), RGB color values (rgb(0, 0, 255) for blue), and
+HSL values (hsl(60, 100%, 50%) for yellow). Each paragraph displays a different color based on the method used for color definition, 
+providing a practical example of how colors can be applied in HTML/CSS.
+
+
+Here’s a detailed line-by-line breakdown of the provided HTML file that demonstrates different color definitions in CSS:
+
+<!DOCTYPE html>:
+This declaration indicates that the document is an HTML5 document, ensuring that browsers render it correctly.
+
+<html lang="en">:
+This is the opening tag for the HTML document, with the lang attribute set to "en," specifying that the content is primarily in English.
+
+<head>:
+This section contains meta-information about the document, including the title and character settings.
+
+<meta charset="UTF-8">:
+This meta tag specifies the character encoding for the document, ensuring that text is displayed correctly using the UTF-8 character set.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">:
+This meta tag sets the viewport settings for responsive design. 
+It ensures that the webpage scales correctly on different devices, particularly on mobile.
+
+<title>HTML colors</title>:
+This tag sets the title of the webpage, which appears in the browser tab. Here, the title is "HTML colors."
+
+</head>:
+This closing tag marks the end of the head section.
+
+<body>:
+This opening tag begins the body section, where the visible content of the webpage is placed.
+
+<p style="color: red;">This text is red using normal color.</p>:
+This paragraph (<p>) contains inline CSS with the style attribute:
+color: red; sets the text color to red using a standard color name.
+The text "This text is red using normal color." will be displayed in red.
+
+<p style="color: #00FF00;">This text is green using hexadecimal color.</p>:
+This paragraph also contains inline CSS:
+color: #00FF00; uses a hexadecimal color code to set the text color to green.
+The hex code #00FF00 represents bright green.
+The text "This text is green using hexadecimal color." will be displayed in green.
+
+<p style="color: rgb(0, 0, 255);">This text is blue using RGB color.</p>:
+This paragraph demonstrates the RGB color model:
+color: rgb(0, 0, 255); sets the text color to blue, with the red and green components set to 0 and the blue component set to 255.
+The text "This text is blue using RGB color." will be displayed in blue.
+
+<p style="color: hsl(60, 100%, 50%);"> This text is yellow using HSL color.</p>:
+This paragraph shows the HSL (Hue, Saturation, Lightness) color model:
+color: hsl(60, 100%, 50%); sets the text color to yellow, where 60 is the hue (representing yellow), 
+100% is the saturation (full color), and 50% is the lightness (medium brightness).
+The text "This text is yellow using HSL color." will be displayed in yellow.
+
+</body>:
+This closing tag marks the end of the body section of the document.
+
+</html>:
+This closing tag indicates the end of the HTML document.
+-->

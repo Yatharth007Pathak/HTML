@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Example</title>
+</head>
+<body>
+    <h1>Sample Form</h1>
+    
+    <form action="/submit" method="post" enctype="multipart/form-data" autocomplete="on">
+        <!-- Text Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="username" placeholder="Enter your name" required><br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="useremail" placeholder="Enter your email" autocomplete="on"><br><br>
+
+        <!-- File Input -->
+        <label for="file">Upload a file:</label>
+        <input type="file" id="file" name="userfile" accept=".jpg,.png,.pdf"><br><br>
+
+        <!-- URL Input with pattern -->
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="userwebsite" pattern="https://.*" placeholder="https://example.com"><br><br>
+
+        <!-- Date Input -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="userdob"><br><br>
+
+        <!-- Disabled Input -->
+        <label for="disabledInput">Disabled Input:</label>
+        <input type="text" id="disabledInput" value="Disabled" disabled><br><br>
+
+        <!-- Datalist with Suggestions -->
+        <label for="city">Choose a city:</label>
+        <input type="text" id="city" name="usercity" list="cities">
+        <datalist id="cities">
+            <option value="New York">
+            <option value="Los Angeles">
+            <option value="Chicago">
+        </datalist><br><br>
+
+        <!-- Multiple File Upload -->
+        <label for="multipleFiles">Upload multiple files:</label>
+        <input type="file" id="multipleFiles" name="userfiles[]" accept=".jpg,.png" multiple><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
+
+
+<!--
+This form covers multiple input types and attributes:
+Text, email, file, URL, and date inputs with specific validation (e.g., required, pattern).
+Datalist for predefined suggestions. 
+Disabled and multiple file upload fields to expand functionality.
+The form uses POST and supports file uploads with multipart/form-data.
+
+
+Here's a detailed line-by-line breakdown of your HTML form example:
+
+HTML Structure
+<!DOCTYPE html>: Declares that the document type is HTML5.
+<html lang="en">: The root element, specifying that the document language is English.
+<head>: The head section containing metadata and resources for the page.
+<meta charset="UTF-8">: Sets the character encoding to UTF-8, ensuring proper display of characters.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: Ensures responsive scaling for different devices, especially mobile.
+<title>HTML Form Example</title>: The title of the page that will be shown on the browser tab.
+
+Body Content
+<body>: Begins the body section, where visible content is placed.
+<h1>Sample Form</h1>: A heading tag (h1), setting the title of the form as "Sample Form."
+
+Form Element
+<form action="/submit" method="post" enctype="multipart/form-data" autocomplete="on">: The form element begins. The attributes include:
+action="/submit": The form data will be sent to the /submit URL (a server-side script). 
+method="post": Data will be sent via HTTP POST method.
+enctype="multipart/form-data": Enables the form to handle file uploads.
+autocomplete="on": Enables autofill for input fields.
+
+Input Fields
+<label for="name">Name:</label>: A label for the input field, connected to the id="name" for the name field.
+<input type="text" id="name" name="username" placeholder="Enter your name" required>: A text input field for the name with attributes:
+id="name": Identifies the input field.
+name="username": Name attribute to use when submitting the form.
+placeholder="Enter your name": Displays placeholder text.
+required: Ensures this field is mandatory for form submission.
+
+<label for="email">Email:</label>: A label for the email input field.
+<input type="email" id="email" name="useremail" placeholder="Enter your email" autocomplete="on">: An email input field with attributes:
+type="email": Ensures the input must be a valid email format.
+autocomplete="on": Allows the browser to suggest previously entered values.
+
+<label for="file">Upload a file:</label>: A label for the file upload input.
+<input type="file" id="file" name="userfile" accept=".jpg,.png,.pdf">: A file input field with:
+accept=".jpg,.png,.pdf": Limits file types to .jpg, .png, and .pdf formats.
+
+<label for="website">Website:</label>: A label for the website URL input field.
+<input type="url" id="website" name="userwebsite" pattern="https://.*" placeholder="https://example.com">: A URL input field with:
+pattern="https://.*": Ensures the input starts with "https://".
+placeholder="https://example.com": Example placeholder for user guidance.
+
+<label for="dob">Date of Birth:</label>: A label for the date input.
+<input type="date" id="dob" name="userdob">: A date picker input field for entering a date.
+<label for="disabledInput">Disabled Input:</label>: A label for a disabled input field.
+<input type="text" id="disabledInput" value="Disabled" disabled>: A disabled text input field. Users cannot interact with it.
+<label for="city">Choose a city:</label>: A label for the text input with a datalist of cities.
+<input type="text" id="city" name="usercity" list="cities">: A text input field that allows users to  type a city or choose from suggestions.
+The list="cities" attribute connects it to the datalist.
+
+<datalist id="cities">: A list of suggested cities the user can select from.
+<option value="New York">, <option value="Los Angeles">, <option value="Chicago">: 
+Options in the datalist that users can pick from or type into the text input.
+
+<label for="multipleFiles">Upload multiple files:</label>: A label for a multiple-file upload field.
+<input type="file" id="multipleFiles" name="userfiles[]" accept=".jpg,.png" multiple>: 
+A file input that allows multiple uploads. The attributes include:
+multiple: Allows selection of more than one file.
+accept=".jpg,.png": Limits file types to .jpg and .png formats.
+
+Submit Button
+<input type="submit" value="Submit">: A submit button to send the form data to the server.
+
+Closing Tags
+</form>: Closes the form element.
+</body>: Closes the body section.
+</html>: Closes the entire HTML document.
+-->

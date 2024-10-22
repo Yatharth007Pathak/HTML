@@ -1,0 +1,88 @@
+<!--
+In HTML, iframes are used to embed another HTML document within the current document. This allows you to display content from 
+other websites or resources directly on your webpage. The content displayed in an iframe behaves like an independent document, 
+and users can interact with it as if it were loaded in a separate browser window.
+
+Here's the basic syntax for using iframes: <iframe src="URL"></iframe>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML iframe</title>
+</head>
+<body>
+    <h1>Embedded Google Map</h1>    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27748.336214319163!2d79.6634012743164!3d29.616996800000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0b7ac9c83d86d%3A0xde05dfded20abe9c!2sChitai%20Golu%20Devta%20Temple!5e0!3m2!1sen!2sin!4v1728557311230!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+</html>
+
+
+<!--
+This HTML file embeds a Google Map using an iframe, displaying the location of Chitai Golu Devta Temple. 
+The map is configured with a width of 400 pixels, a height of 300 pixels, no border, and lazy loading for performance optimization. 
+There is also a heading above the map titled "Embedded Google Map."
+The iframe element is a powerful tool for embedding external resources like maps, videos, or entire websites within your webpage.
+
+
+Here’s a breakdown of the HTML file that embeds a Google Map using an iframe:
+
+<!DOCTYPE html>:
+Declares that the document is using HTML5.
+
+<html lang="en">:
+Defines the root of the HTML document, with lang="en" specifying that the language is English.
+
+<head>:
+Contains meta-information about the webpage.
+
+<meta charset="UTF-8">:
+Specifies the character encoding as UTF-8 to support a wide range of characters.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">:
+Sets the viewport properties, ensuring that the webpage is responsive and fits different screen sizes.
+
+<title>HTML iframe</title>:
+Sets the title of the webpage to "HTML iframe", which appears in the browser tab.
+
+</head>:
+Ends the head section.
+
+<body>:
+Starts the body section where the visible content is placed.
+
+<h1>Embedded Google Map</h1>:
+This <h1> tag creates a main heading with the text "Embedded Google Map."
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27748.336214319163!2d79.6634012743164!3d29.616996800000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0b7ac9c83d86d%3A0xde05dfded20abe9c!2sChitai%20Golu%20Devta%20Temple!5e0!3m2!1sen!2sin!4v1728557311230!5m2!1sen!2sin":
+The <iframe> tag is used to embed an external webpage or resource, such as a Google Map.
+The src attribute contains the URL of the Google Map, which is for Chitai Golu Devta Temple in India.
+
+width="400" height="300":
+Sets the width of the embedded map to 400 pixels and the height to 300 pixels.
+
+style="border:0;":
+Adds inline CSS styling to remove the border around the iframe (border:0;).
+
+allowfullscreen="":
+Enables the iframe to be displayed in full screen when applicable.
+
+loading="lazy":
+Implements lazy loading for the iframe, meaning the map will only load when the user scrolls near it, improving page load speed.
+
+referrerpolicy="no-referrer-when-downgrade":
+Controls the referrer information that is sent when navigating from the iframe. 
+In this case, it sends no referrer information when switching to a less secure protocol (from HTTPS to HTTP).
+
+</iframe>:
+Closes the iframe.
+
+</body>:
+Ends the body section.
+
+</html>:
+Closes the HTML document.
+-->

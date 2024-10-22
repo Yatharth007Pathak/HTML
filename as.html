@@ -1,0 +1,88 @@
+<!--
+HTML file paths are used to specify the location of external resources, such as images, CSS files, 
+JavaScript files, and other assets, on a web page. The browser uses the file path to find the resource and load it into the web page.
+
+There are three main types of file paths used in HTML:
+
+Absolute File Paths: An absolute file path provides the full URL or file system path from the root of the web server or local file system. 
+Absolute paths start with the scheme (e.g.. "http://" for web URLs or "file://" for local file paths).
+Example
+<img src="https://www.example.com/images/image.jpg" alt="Image">
+
+Relative File Paths: A relative file path provides location of the resource relative to the current HTML file or the current working directory. 
+Relative paths are commonly used when referencing resources within the same website or project.
+Example
+<link rel="stylesheet" href="/css/styles.css">
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML File Paths</title>
+</head>
+<body>
+    <a href="https://google.com" target="_blank">Visit google website</a>
+    <img src="/images/HTMLlogo.webp"
+    height="400" width="400" alt="html image" title="Sample image.">
+    
+</body>
+</html>
+
+
+<!--
+
+This HTML file includes:
+A hyperlink to Google that opens in a new tab.
+An image with a relative file path (/images/logo-2582748_640.webp), assuming that the images folder is in the root directory. 
+The image is displayed at 400x400 pixels and has both alternative text for accessibility and a tooltip for user interaction.
+
+
+Here’s a line-by-line breakdown of the HTML file that demonstrates how to create a hyperlink and use a relative file path for an image:
+
+<!DOCTYPE html>:
+Specifies that the document is HTML5.
+
+<html lang="en">:
+Opens the HTML document and sets the language to English.
+
+<head>:
+This section contains meta-information, such as the document title and character settings.
+
+<meta charset="UTF-8">:
+Defines the character encoding as UTF-8 for proper text rendering.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">:
+Ensures responsive design by scaling the page on different devices.
+
+<title>HTML File Paths</title>:
+Sets the title of the webpage to "HTML File Paths," which appears in the browser tab.
+
+</head>:
+Closes the head section.
+
+<body>:
+Opens the body section, where the content visible on the webpage is defined.
+
+<a href="https://google.com" target="_blank">Visit google website</a>:
+Creates a hyperlink:
+href="https://google.com" specifies the URL (Google in this case).
+target="_blank" ensures the link opens in a new tab.
+The text "Visit google website" is clickable and leads to Google.
+
+<img src="/images/HTMLlogo.webp" height="400" width="400" alt="html image" title="Sample image.">:
+This line adds an image using a relative file path:
+src="/images/HTMLlogo.webp" defines the path to the image file. 
+In this case, it is a relative path pointing to a folder named images located in the root directory. The file is HTMLlogo.webp.
+height="400" and width="400" set the image dimensions to 400x400 pixels.
+alt="html image" provides alternative text in case the image doesn’t load, useful for accessibility.
+title="Sample image." adds a tooltip that appears when the user hovers over the image.
+
+</body>:
+Closes the body section.
+
+</html>:
+Closes the HTML document.
+-->

@@ -1,0 +1,119 @@
+<!--
+HTML forms have various attributes that allow you to customize their behavior and appearance.
+Here are some common HTML form attributes and their purposes:
+
+action: This attribute specifies the URL that the form data will be sent to.
+method: This attribute specifies how the form data will be sent. The two most common methods are GET and POST.
+name: This attribute specifies the name of the form. This name is used to identify the form when the data is submitted to the server.
+enctype: This attribute specifies the MIME type of the form data. The most common MIME type is application/x-www-form-urlencoded.
+accept: This attribute specifies the types of files that the form can accept.
+autocomplete: This attribute specifies whether or not the form should automatically fill in the user's input.
+required: This attribute specifies that the input field must be filled out before the form can be submitted.
+placeholder: This attribute specifies a placeholder text that will be displayed in the input field when the field is empty.
+disabled: Disables the input element, making it uneditable and non-functional. 
+accept: Specifies the types of files that can be uploaded using file input. For example, accept="image/*" for image files.
+list: Associates an <input> element with a <datalist> element, providing pre-defined
+pattern: Specifies a regular expression for text input validation.
+multiple: Allows users to select multiple files for file input. Used as multiple="multiple" or simply multiple.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Attributes</title>
+</head>
+<body>
+    <form>
+        <label>Enter Country:</label>
+        <input type="text" name="usercountry" placeholder="Enter your country"> <br>
+
+        <label for="firstname">Enter First Name:</label>
+        <input type="text" placeholder="Enter First Name" id="firstname" required> <br>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" placeholder="Enter Last Name" id="lastname" disabled> <br>
+
+        <input type="file" name="profile_picture" accept="image/" multiple> <br>
+
+        <input type="checkbox" id="terms" value="agree">
+        <label for="terms">I agree on the terms and conditions.</label> <br>
+
+        <input type="submit"> <br>
+
+        <input type="reset"> <br>
+
+    </form>
+    
+</body>
+</html>
+
+
+<!--
+This form demonstrates various HTML input attributes:
+required ensures fields like "First Name" must be filled out.
+disabled prevents user interaction with fields like "Last Name."
+accept="image/" limits file types in file uploads.
+multiple allows multiple file uploads.
+Checkbox and form buttons (submit and reset) manage form actions.
+
+
+Here’s a detailed line-by-line breakdown of your HTML form with various attributes:
+
+HTML Structure
+<!DOCTYPE html>: Declares the document type as HTML5.
+<html lang="en">: Starts the root HTML element, specifying that the language is English.
+<head>: Contains metadata and resources for the page.
+<meta charset="UTF-8">: Sets the character encoding to UTF-8.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: Ensures the page scales properly on all devices.
+<title>HTML Form Attributes</title>: Sets the title of the webpage to "HTML Form Attributes."
+
+
+Body Content
+<body>: Opens the body section where the visible content of the page is placed.
+
+
+Form Elements
+<form>: Begins the form. No action or method attribute is provided, so the default behavior would be submission to the same page.
+
+Input Fields
+<label>Enter Country:</label>: A label for the first input field asking the user to enter their country.
+<input type="text" name="usercountry" placeholder="Enter your country">: A text input field for entering the country. The attributes specify-
+type="text": A standard text input.
+name="usercountry": The name attribute, used when submitting the form.
+placeholder="Enter your country": A placeholder text displayed in the input field when it’s empty.
+
+<label for="firstname">Enter First Name:</label>: A label linked to the input field with the id="firstname" using the for attribute.
+<input type="text" placeholder="Enter First Name" id="firstname" required>: A text input for the first name. The attributes specify:
+id="firstname": Identifies the input field.
+placeholder="Enter First Name": Placeholder text displayed inside the input box.
+required: This field must be filled out before form submission.
+
+<label for="lastname">Last Name:</label>: A label linked to the input field with id="lastname" for the last name.
+<input type="text" placeholder="Enter Last Name" id="lastname" disabled>: A disabled text input for the last name. The attributes specify:
+disabled: Prevents the user from interacting with this field.
+placeholder="Enter Last Name": Displays placeholder text but the field is not editable.
+
+File Input
+<input type="file" name="profile_picture" accept="image/" multiple>:
+A file input for uploading files. The attributes specify:
+type="file": Allows users to upload a file.
+name="profile_picture": The name attribute used in form submission.
+accept="image/": Limits the file types to images.
+multiple: Allows users to select and upload multiple files at once.
+
+Checkbox and Submit Buttons
+<input type="checkbox" id="terms" value="agree">: A checkbox for accepting terms and conditions. The attributes specify:
+type="checkbox": Creates a checkbox.
+id="terms": Identifies the checkbox.
+value="agree": The value that will be sent if the checkbox is checked.
+<label for="terms">I agree on the terms and conditions.</label>: A label for the checkbox, linked to the id="terms".
+<input type="submit">: A submit button that submits the form. When clicked, it sends the form data to the server.
+<input type="reset">: A reset button that resets all form fields to their default values.
+
+Closing Tags
+</form>: Closes the form element.
+</body>: Closes the body section.
+</html>: Closes the entire HTML document.
+-->

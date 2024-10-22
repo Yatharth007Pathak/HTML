@@ -1,0 +1,48 @@
+/*
+Here are some commonly used CSS properties that can be applied to HTML elements:
+Color: Sets the text color.
+Background-color: Sets the background color of an element.
+Font-size: Specifies the size of the font.
+Margin: Defines the space around an element.
+Padding: Sets the space between the content and the border of an element.
+Border: Adds borders around an element.
+Text-align: Aligns the text (left, right, center, justify).
+Display: Specifies how an element is displayed (block, inline, inline-block).
+Width/Height: Sets the dimensions of an element.
+*/
+
+
+p {
+    font-size: 24px;
+    margin: 5%;
+    background-color: green;
+    color: white;
+}
+
+
+/*
+This is a CSS rule for styling all <p> (paragraph) elements on the webpage. 
+This CSS rule will style all paragraphs by making their text size larger (24px), setting their background color to green, 
+text color to white, and applying a 5% margin around each paragraph. The margins will provide spacing from other elements on the page.
+
+
+Let’s break down each property within the rule:
+
+p:
+The selector p targets all paragraph (<p>) elements in the HTML document. 
+The styles defined inside the curly braces will be applied to every paragraph.
+
+font-size: 24px;:
+This sets the size of the text within the paragraph to 24 pixels. It controls how large the text inside <p> elements will appear.
+
+margin: 5%;:
+This sets the margin (space around the paragraph) to 5% of the width of the containing element (e.g., the browser window). 
+This applies the margin equally on all four sides of the paragraph (top, right, bottom, and left).
+
+background-color: green;:
+This sets the background color of the paragraph to green. 
+The entire area of the paragraph, including the space within the margins, will have this background color.
+
+color: white;:
+This sets the text color inside the paragraph to white, making it stand out against the green background.
+*/

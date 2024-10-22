@@ -1,0 +1,68 @@
+<!--
+HTML entities are special codes that are used to represent characters that cannot be typed directly into HTML code. 
+These characters include special symbols, accented letters, and non-breaking spaces. There are two ways to represent HTML entities:
+Entity names: These are the names of the characters, such as "&amp;" for the ampersand symbol.
+Entity numbers: These are the Unicode code points of the characters, such as "&#38;" for the ampersand symbol.
+
+HTML entities are often used to prevent browsers from interpreting certain characters as HTML tags.
+For example, the less-than sign (<) is a reserved character in HTML, so if you want to display it in your text, 
+you need to use the entity code "&lt;". Otherwise, the browser might think that you are trying to start a new tag.
+
+Here are some common HTML entities:
+
+<: Represents the less than sign (<).
+>: Represents the greater than sign (>).
+&: Represents the ampersand (&) itself.
+": Represents a double quotation mark (").
+': Represents a single quotation mark (').
+
+For special characters with diacritical marks or accent symbols, you can use entities like:
+é: Represents the letter "e".
+ñ: Represents the letter "n".
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML entities</title>
+</head>
+<body>
+    <p>Amersand symbol: &amp; or &#38</p>
+</body>
+</html>
+
+
+<!--
+&amp;: This is the named entity for the ampersand (&) symbol.
+&#38;: This is the numeric entity reference for the same ampersand (&) symbol. 
+Both achieve the same result but are written differently. Using HTML entities ensures that special characters like the ampersand, 
+which have special meanings in HTML, are rendered correctly instead of being interpreted as code.
+
+
+Here’s a breakdown of your HTML code that demonstrates the use of HTML entities:
+
+HTML Structure
+<!DOCTYPE html>: Declares the document type as HTML5.
+<html lang="en">: Starts the root HTML element, specifying the language of the document as English.
+<head>: Contains metadata about the webpage, such as the title and character encoding.
+<meta charset="UTF-8">: Specifies the character encoding as UTF-8, which supports a wide range of characters.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: 
+Ensures proper rendering and scaling on different devices by setting the viewport.
+<title>HTML entities</title>: Sets the title of the webpage to "HTML entities", which appears in the browser tab.
+
+Body Content
+<body>: Begins the body section, where the visible content of the page is placed.
+<p>: Starts a paragraph.
+Amersand symbol:: The text displayed as the label before the ampersand symbol.
+&amp;: Represents the ampersand symbol (&) using the HTML entity &amp;. HTML entities are used to display special characters in HTML.
+or: A conjunction to introduce another method for representing the ampersand symbol.
+&#38;: Another way to represent the ampersand (&) using its numeric character reference. &#38; is numeric code that corresponds to the ampersand.
+</p>: Closes the paragraph tag.
+
+Closing Tags
+</body>: Closes the body section of the HTML document.
+</html>: Closes the entire HTML document.
+-->
